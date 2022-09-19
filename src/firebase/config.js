@@ -4,12 +4,12 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAz7l5p5ynBVZq_vxNIcp-PipMdzXAF5fI",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "the-hyper-art-tutorials.firebaseapp.com",
     projectId: "the-hyper-art-tutorials",
-    storageBucket: "the-hyper-art-tutorials.appspot.com",
-    messagingSenderId: "660259225596",
-    appId: "1:660259225596:web:7123660f306657a2637c79"
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
